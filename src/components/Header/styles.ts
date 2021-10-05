@@ -149,6 +149,7 @@ export const MobileNav = styled.nav<MobileNavProps>`
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
 
   overflow-y: auto;
 
@@ -157,7 +158,7 @@ export const MobileNav = styled.nav<MobileNavProps>`
   transition: visibility 0s, transform 0.2s ease;
 
   > button,
-  > nav {
+  > a {
     transition: inherit;
   }
 
@@ -170,7 +171,7 @@ export const MobileNav = styled.nav<MobileNavProps>`
     !props.active &&
     css`
       visibility: hidden;
-      transform: translateX(100%);
+      transform: translateY(-100%);
     `};
 
   @media (min-width: 875px) {

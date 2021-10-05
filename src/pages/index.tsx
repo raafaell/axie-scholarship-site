@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 
-import { Hero } from '../components/Hero/styles';
+import { Hero } from '../styles/pages/Home';
 
 export default function Home() {
   return (
