@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -17,13 +17,13 @@ export default createGlobalStyle`
 
 
   body {
-    color: ${(props) => props.theme.colors.main.default};
-    font-family: ${(props) => props.theme.fonts.serif}, sans-serif;
+    color: ${props => props.theme.colors.main.default};
+    font-family: ${props => props.theme.fonts.serif}, sans-serif;
     font-weight: 400;
   }
 
   input, textarea, button {
-    font-family: ${(props) => props.theme.fonts.serif}, sans-serif;
+    font-family: ${props => props.theme.fonts.serif}, sans-serif;
   }
 
   button, a {
