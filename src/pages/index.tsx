@@ -1,3 +1,4 @@
+import BookSection from '../components/BookSection';
 import Header from '../components/Header';
 import InfoSection from '../components/InfoSection';
 
@@ -9,7 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <InfoSection />
-      <h1>Home</h1>
+      <BookSection />
     </>
   );
 }
