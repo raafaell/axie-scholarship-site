@@ -6,6 +6,7 @@ export const FixedWraper = styled.section`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 `;
 
 export const Container = styled.header`
