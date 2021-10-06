@@ -1,4 +1,5 @@
 import BookSection from '../components/BookSection';
+import GetInSection from '../components/GetInSection';
 import Header from '../components/Header';
 import InfoSection from '../components/InfoSection';
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <InfoSection />
       <BookSection />
+      <GetInSection />
     </>
   );
 }

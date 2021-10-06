@@ -23,11 +23,11 @@ export const Book = styled.div`
 
   @media (max-width: 780px) {
     background-image: url('/section/book/without-book-bg.png');
-    min-height: 400px;
+    min-height: 450px;
   }
 
   @media (max-width: 580px) {
-    min-height: 700px;
+    min-height: 730px;
   }
 `;
 
@@ -42,13 +42,13 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 780px) {
+  @media (max-width: 779px) {
     background: url('/section/book/page-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    top: -30px;
+    top: -60px;
     width: 90%;
     padding: 1rem 2rem 2rem;
   }
