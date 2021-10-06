@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero>
+        <img src="/hero/hero-logo.png" alt="Axie Scholarship Rimuru Tempest" />
+      </Hero>
       <InfoSection />
       <BookSection />
       <GetInSection />
