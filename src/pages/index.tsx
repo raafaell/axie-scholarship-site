@@ -1,9 +1,10 @@
-import BookSection from '../components/BookSection';
-import GetInSection from '../components/GetInSection';
 import Header from '../components/Header';
 import InfoSection from '../components/InfoSection';
+import BookSection from '../components/BookSection';
+import GetInSection from '../components/GetInSection';
 import RoadmapSection from '../components/RoadmapSection';
 import TutorialSection from '../components/TutorialSection';
+import FlagSection from '../components/FlagSection';
 
 import { Hero } from '../styles/pages/Home';
 
@@ -19,6 +20,7 @@ export default function Home() {
       <GetInSection />
       <RoadmapSection />
       <TutorialSection />
+      <FlagSection />
     </>
   );
 }
