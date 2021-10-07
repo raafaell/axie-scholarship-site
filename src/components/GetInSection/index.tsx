@@ -1,16 +1,18 @@
-import { Container, Button } from './styles';
+import FlagButton from '../FlagButton';
+
+import { Container } from './styles';
 
 function GetInSection() {
   return (
     <Container>
-      <Button>
+      <FlagButton>
         <p>
           Faça parte da Rimuru
           <br />
           Tempest Scholarship!
         </p>
         <small>Criar conta →</small>
-      </Button>
+      </FlagButton>
     </Container>
   );
 }
