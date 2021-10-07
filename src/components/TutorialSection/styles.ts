@@ -66,6 +66,11 @@ export const Content = styled.div`
   }
 `;
 
+export const Icon = styled.p`
+  font-size: 4rem;
+  margin-bottom: 1rem;
+`;
+
 export const StyledFlagButton = styled(FlagButton)`
   margin: 0 0 -2.5rem;
 `;

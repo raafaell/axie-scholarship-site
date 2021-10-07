@@ -1,8 +1,11 @@
+import { FaUniversity, FaFileContract, FaTrophy } from 'react-icons/fa';
+
 import {
   Wrapper,
   Separator,
   Container,
   Content,
+  Icon,
   StyledFlagButton,
 } from './styles';
 
@@ -13,6 +16,9 @@ function TutorialSection() {
       <Wrapper>
         <Container>
           <Content>
+            <Icon>
+              <FaUniversity />
+            </Icon>
             <h1>Academia</h1>
             <p>
               Seja bem-vindo (a) a sua nova vida. Uma jornada repleta de
@@ -26,6 +32,9 @@ function TutorialSection() {
             </p>
           </Content>
           <Content>
+            <Icon>
+              <FaFileContract />
+            </Icon>
             <h1>Como se inscrever?</h1>
             <p>
               Basta entrar no DISCORD da Axie Infinity Rimuru Tempest
@@ -37,6 +46,9 @@ function TutorialSection() {
             </p>
           </Content>
           <Content>
+            <Icon>
+              <FaTrophy />
+            </Icon>
             <h1>Metas da academia</h1>
             <p>É necessário alcançar pelo menos 150 SLP´s diários.</p>
             <p>
