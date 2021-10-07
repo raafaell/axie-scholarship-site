@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 interface FlagButtonProps {
   children: ReactNode;
-  className: string;
+  className?: string;
 }
 
 function FlagButton({ children, className }: FlagButtonProps) {
