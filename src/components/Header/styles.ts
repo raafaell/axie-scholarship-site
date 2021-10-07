@@ -6,7 +6,7 @@ export const FixedWraper = styled.section`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 10;
 `;
 
 export const Container = styled.header`
@@ -145,12 +145,12 @@ export const MobileNav = styled.nav<MobileNavProps>`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
 
   overflow-y: auto;
 
@@ -172,7 +172,7 @@ export const MobileNav = styled.nav<MobileNavProps>`
     !props.active &&
     css`
       visibility: hidden;
-      transform: translateY(-100%);
+      transform: translateX(100%);
     `};
 
   @media (min-width: 875px) {
