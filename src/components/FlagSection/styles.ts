@@ -10,11 +10,11 @@ export const Wrapper = styled.section`
 
   @media (max-width: 1024px) {
     background-size: 100% auto;
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
   @media (max-width: 780px) {
     background-size: 100% 100%;
-    padding: 2rem 0;
+    padding: 2rem 0 5rem;
   }
 `;
 

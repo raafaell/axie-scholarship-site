@@ -5,6 +5,7 @@ import GetInSection from '../components/GetInSection';
 import RoadmapSection from '../components/RoadmapSection';
 import TutorialSection from '../components/TutorialSection';
 import FlagSection from '../components/FlagSection';
+import ContactSection from '../components/ContactSection';
 
 import { Hero } from '../styles/pages/Home';
 
@@ -21,6 +22,7 @@ export default function Home() {
       <RoadmapSection />
       <TutorialSection />
       <FlagSection />
+      <ContactSection />
     </>
   );
 }
