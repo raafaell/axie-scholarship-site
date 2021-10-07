@@ -5,12 +5,11 @@ interface ContactSectionProps {}
 function ContactSection({}: ContactSectionProps) {
   return (
     <Wrapper>
-      <h1>Faça parte!</h1>
+      <h1>Gostaria de nos dizer algo?</h1>
       <Content>
         <img src="/section/contact/rimuru-mailer.png" alt="Fale com a gente!" />
         <form action="">
-          <input type="text" name="name" placeholder="Nome" />
-          <input type="email" name="email" placeholder="E-mail" />
+          <input type="text" name="message" placeholder="Digite sua mensagem" />
           <button type="submit">Enviar</button>
         </form>
       </Content>

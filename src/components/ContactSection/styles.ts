@@ -47,7 +47,7 @@ export const Content = styled.div`
     margin: 0 2.75rem;
   }
 
-  @media (max-width: 460px) {
+  @media (max-width: 860px) {
     justify-content: center;
     padding: 0;
   }
@@ -77,17 +77,8 @@ export const Content = styled.div`
   form {
     display: flex;
 
-    @media (max-width: 580px) {
-      width: 100%;
-      flex-direction: column;
-
-      input {
-        margin: 0;
-        margin-bottom: 1rem;
-      }
-    }
-
     input {
+      width: 25rem;
       background: ${({ theme }) => theme.colors.inverse};
       border: 1px solid ${({ theme }) => theme.colors.main.default};
       color: ${({ theme }) => theme.colors.main.dark};
@@ -98,6 +89,17 @@ export const Content = styled.div`
 
       &::placeholder {
         color: ${({ theme }) => theme.colors.main.default};
+      }
+    }
+
+    @media (max-width: 580px) {
+      width: 100%;
+      flex-direction: column;
+
+      input {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
       }
     }
 
