@@ -1,4 +1,6 @@
-import { Wrapper, Content, Info } from './styles';
+import { FaDiscord, FaYoutube, FaInstagram, FaTwitch } from 'react-icons/fa';
+
+import { Wrapper, Content, Info, SocialList } from './styles';
 
 function Footer() {
   return (
@@ -12,6 +14,20 @@ function Footer() {
             nunc in blandit aliquam eget. Sed mauris sit risus, risus, diam
             lectus nibh.
           </p>
+          <SocialList>
+            <a>
+              <FaDiscord />
+            </a>
+            <a>
+              <FaYoutube />
+            </a>
+            <a>
+              <FaInstagram />
+            </a>
+            <a>
+              <FaTwitch />
+            </a>
+          </SocialList>
         </Info>
         <Info>
           <h1>Sitemap</h1>

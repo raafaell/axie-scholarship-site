@@ -68,3 +68,14 @@ export const Info = styled.div`
     color: ${({ theme }) => theme.colors.highlight};
   }
 `;
+
+export const SocialList = styled.div`
+  display: flex;
+  margin-top: 1rem;
+
+  font-size: 2rem;
+
+  svg {
+    margin-right: 1rem;
+  }
+`;
