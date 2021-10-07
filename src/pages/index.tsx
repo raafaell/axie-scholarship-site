@@ -6,6 +6,7 @@ import RoadmapSection from '../components/RoadmapSection';
 import TutorialSection from '../components/TutorialSection';
 import FlagSection from '../components/FlagSection';
 import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 import { Hero } from '../styles/pages/Home';
 
@@ -23,6 +24,7 @@ export default function Home() {
       <TutorialSection />
       <FlagSection />
       <ContactSection />
+      <Footer />
     </>
   );
 }
