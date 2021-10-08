@@ -8,6 +8,8 @@ import FlagSection from '../components/FlagSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
+import InProgressMessage from '../components/InProgressMessage';
+
 import { Hero } from '../styles/pages/Home';
 
 export default function Home() {
@@ -25,6 +27,7 @@ export default function Home() {
       <FlagSection />
       <ContactSection />
       <Footer />
+      <InProgressMessage />
     </>
   );
 }
