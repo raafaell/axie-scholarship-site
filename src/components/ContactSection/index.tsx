@@ -1,8 +1,6 @@
 import { Wrapper, Content } from './styles';
 
-interface ContactSectionProps {}
-
-function ContactSection({}: ContactSectionProps) {
+function ContactSection() {
   return (
     <Wrapper>
       <h1>Gostaria de nos dizer algo?</h1>
