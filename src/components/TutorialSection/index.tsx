@@ -61,13 +61,19 @@ function TutorialSection() {
             </p>
           </Content>
         </Container>
-        <StyledFlagButton>
-          <p>
-            Quero ser da
-            <br />
-            família Tempest!
-          </p>
-        </StyledFlagButton>
+        <a
+          href="https://discord.gg/juqU2HYdXc"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <StyledFlagButton>
+            <p>
+              Quero ser da
+              <br />
+              família Tempest!
+            </p>
+          </StyledFlagButton>
+        </a>
       </Wrapper>
       <Separator />
     </>

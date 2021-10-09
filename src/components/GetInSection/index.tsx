@@ -4,16 +4,18 @@ import { Container } from './styles';
 
 function GetInSection() {
   return (
-    <Container>
-      <FlagButton>
-        <p>
-          Faça parte da Rimuru
-          <br />
-          Tempest Scholarship!
-        </p>
-        <small>Criar conta →</small>
-      </FlagButton>
-    </Container>
+    <a href="https://discord.gg/juqU2HYdXc" target="_blank" rel="noreferrer">
+      <Container>
+        <FlagButton>
+          <p>
+            Faça parte da Rimuru
+            <br />
+            Tempest Scholarship!
+          </p>
+          <small>Criar conta →</small>
+        </FlagButton>
+      </Container>
+    </a>
   );
 }
 
