@@ -15,16 +15,32 @@ function Footer() {
             lectus nibh.
           </p>
           <SocialList>
-            <a>
+            <a
+              href="https://discord.gg/juqU2HYdXc"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaDiscord />
             </a>
-            <a>
+            <a
+              href="https://www.youtube.com/channel/UCm_ljG-jQl_XHaQUB1s_dNQ"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaYoutube />
             </a>
-            <a>
+            <a
+              href="https://www.instagram.com/axiescholarship/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram />
             </a>
-            <a>
+            <a
+              href="https://www.twitch.tv/axiescholarship"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitch />
             </a>
           </SocialList>

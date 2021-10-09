@@ -76,6 +76,7 @@ export const SocialList = styled.div`
   font-size: 2rem;
 
   svg {
+    color: ${({ theme }) => theme.colors.main.dark};
     margin-right: 1rem;
   }
 `;
