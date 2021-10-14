@@ -1,4 +1,5 @@
-import Footer from '../../components/Footer';
+import { useState, useCallback, useEffect } from 'react';
+
 import Header from '../../components/Header';
 
 import {
@@ -11,9 +12,53 @@ import {
   Plan,
   CardsContainer,
   PlanButton,
+  Currency,
+  StyledFooter,
 } from './styles';
 
+interface BinanceResponseProps {
+  symbol: string;
+  price: string;
+}
+
 export default function Investors() {
+  const [slpCurrency, setSlpCurrency] = useState(9.29);
+
+  const delay = useCallback(delayInms => {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(2);
+      }, delayInms);
+    });
+  }, []);
+
+  const getSlpCurrency = useCallback(async () => {
+    try {
+      const response = await fetch(
+        'https://api.binance.com/api/v3/ticker/price?symbol=SLPBUSD',
+      );
+
+      const parsedResponse = (await response.json()) as BinanceResponseProps;
+
+      const typedNumber = Number(parsedResponse.price);
+
+      const currency = typedNumber * 120;
+      console.log(currency);
+
+      setSlpCurrency(Number(currency.toFixed(2)));
+    } catch {
+      setSlpCurrency(currentState => currentState);
+    }
+
+    await delay(2000);
+
+    getSlpCurrency();
+  }, []);
+
+  useEffect(() => {
+    getSlpCurrency();
+  }, []);
+
   return (
     <>
       <Header />
@@ -115,7 +160,7 @@ export default function Investors() {
       </Main>
       <PlansSection>
         <PlansContainer>
-          <Plan>
+          <Plan side="left">
             <h1>Starter</h1>
             <ul>
               <li>
@@ -135,11 +180,11 @@ export default function Investors() {
                 <p>SOMENTE 5 VAGAS</p>
               </li>
             </ul>
-            <CardsContainer>
+            <CardsContainer side="left">
               <PlanButton color="purple">Seja um Investidor Agora</PlanButton>
             </CardsContainer>
           </Plan>
-          <Plan>
+          <Plan side="right">
             <h1>Exclusivo</h1>
             <ul>
               <li>
@@ -169,17 +214,22 @@ export default function Investors() {
                 <p>VAGA EXCLUSIVA PARA INVESTIDOR</p>
               </li>
             </ul>
-            <CardsContainer>
+            <CardsContainer side="right">
               <PlanButton color="green">
                 Quero ser Investidor Exclusivo
               </PlanButton>
             </CardsContainer>
           </Plan>
-          <img src="/investors/plans/totem.png" alt="Totem com dois Rimurus" />
+          <Currency>
+            <h1>
+              120 SLP agora:
+              <br />${slpCurrency} USD
+            </h1>
+          </Currency>
         </PlansContainer>
+        <img src="/investors/plans/clouds.png" alt="Núvens" />
       </PlansSection>
-
-      <Footer />
+      <StyledFooter />
     </>
   );
 }

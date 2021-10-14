@@ -2,9 +2,13 @@ import { FaDiscord, FaYoutube, FaInstagram, FaTwitch } from 'react-icons/fa';
 
 import { Wrapper, Content, Info, SocialList } from './styles';
 
-function Footer() {
+interface FooterProps {
+  className?: string;
+}
+
+function Footer({ className }: FooterProps) {
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <Content>
         <img src="/footer/logo-ext.png" alt="Axie Scholarship Rimuru Tempest" />
         <Info>
