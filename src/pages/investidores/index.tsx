@@ -14,7 +14,7 @@ import {
   PlanButton,
   Currency,
   StyledFooter,
-} from './styles';
+} from '../../styles/pages/Investors';
 
 interface BinanceResponseProps {
   symbol: string;

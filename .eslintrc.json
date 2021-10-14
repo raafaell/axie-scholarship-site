@@ -50,7 +50,21 @@
     ],
     "react/jsx-props-no-spreading": "off",
     "arrow-parens": "off",
-    "implicit-arrow-linebreak": "off"
+    "implicit-arrow-linebreak": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "arrow-body-style": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "consistent-return": "off",
+    "object-curly-newline": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "indent": "warn",
+    "react/require-default-props": "off",
+    "default-case": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "operator-linebreak": "off",
+    "react/button-has-type": "warn"
   },
   "settings": {
     "import/resolver": {
@@ -60,5 +74,5 @@
   "globals": {
     "React": true,
     "JSX": true
-  },
+  }
 }
