@@ -22,7 +22,8 @@ interface BinanceResponseProps {
 }
 
 export default function Investors() {
-  const [slpCurrency, setSlpCurrency] = useState(9.29);
+  const [usdCurrency, setUSDCurrency] = useState(9.29);
+  const [ethCurrency, setETHCurrency] = useState(0.0019);
 
   const delay = useCallback(delayInms => {
     return new Promise(resolve => {
@@ -32,32 +33,44 @@ export default function Investors() {
     });
   }, []);
 
-  const getSlpCurrency = useCallback(async () => {
-    try {
-      const response = await fetch(
-        'https://api.binance.com/api/v3/ticker/price?symbol=SLPBUSD',
-      );
+  const getSlpCurrency = useCallback(
+    async (coin: 'BUSD' | 'ETH') => {
+      try {
+        const response = await fetch(
+          `https://api.binance.com/api/v3/ticker/price?symbol=SLP${coin}`,
+        );
 
-      const parsedResponse = (await response.json()) as BinanceResponseProps;
+        const parsedResponse = (await response.json()) as BinanceResponseProps;
 
-      const typedNumber = Number(parsedResponse.price);
+        const typedNumber = Number(parsedResponse.price);
 
-      const currency = typedNumber * 120;
-      console.log(currency);
+        const slpAmount = 120;
 
-      setSlpCurrency(Number(currency.toFixed(2)));
-    } catch {
-      setSlpCurrency(currentState => currentState);
-    }
+        const currency = typedNumber * slpAmount;
 
-    await delay(2000);
+        switch (coin) {
+          case 'BUSD':
+            setUSDCurrency(Number(currency.toFixed(2)));
+            break;
+          case 'ETH':
+            setETHCurrency(Number(currency.toFixed(4)));
+            break;
+        }
+      } catch {
+        return;
+      }
 
-    getSlpCurrency();
-  }, []);
+      await delay(2000);
+
+      getSlpCurrency(coin);
+    },
+    [delay],
+  );
 
   useEffect(() => {
-    getSlpCurrency();
-  }, []);
+    getSlpCurrency('BUSD');
+    getSlpCurrency('ETH');
+  }, [getSlpCurrency]);
 
   return (
     <>
@@ -223,7 +236,8 @@ export default function Investors() {
           <Currency>
             <h1>
               120 SLP agora:
-              <br />${slpCurrency} USD
+              <br />
+              {usdCurrency} USD || {ethCurrency} ETH
             </h1>
           </Currency>
         </PlansContainer>

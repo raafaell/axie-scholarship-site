@@ -523,7 +523,7 @@ export const Currency = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 3rem;
     text-align: center;
     color: ${({ theme }) => theme.colors.highlight};
@@ -538,6 +538,10 @@ export const Currency = styled.div`
     width: 300px;
     height: 150px;
     bottom: -40px;
+
+    h1 {
+      font-size: 1.4rem;
+    }
   }
 `;
 
