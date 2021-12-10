@@ -146,7 +146,7 @@ export const Main = styled.main`
   padding: 4rem 2rem 8rem;
 
   @media (max-width: 500px) {
-    padding: 2rem;
+    padding: 3.5rem 2rem 2rem;
     padding-bottom: 6.5rem;
   }
 
@@ -157,6 +157,8 @@ export const Main = styled.main`
 
     margin-bottom: 1.5rem;
 
+    font-family: ${({ theme }) => theme.fonts.sansSerif};
+    color: ${({ theme }) => theme.colors.main.dark};
     font-size: 3rem;
     transition: 0.2s;
 
