@@ -27,10 +27,7 @@ function Header() {
         <Container>
           <Link href="/" passHref>
             <a>
-              <img
-                src="/nav/nav-logo-extended.png"
-                alt="Axie Scholarship Rimiru Tempest"
-              />
+              <img src="/nav/nav-logo-extended.png" alt="Axie Infinity Zone"/>
             </a>
           </Link>
 
@@ -41,15 +38,15 @@ function Header() {
             <Link href="/guia" passHref>
               <NavItem>Guia de Iniciação</NavItem>
             </Link>
-            <Link href="/recrutamento" passHref>
-              <NavItem>Recrutamento</NavItem>
+            <Link href="/investidores" passHref>
+              <NavItem>Investidores</NavItem>
             </Link>
-            <Link href="/agenda" passHref>
-              <NavItem>Agenda de Treinos</NavItem>
+            <Link href="/ranking" passHref>
+              <NavItem>Ranking dos Scholars</NavItem>
             </Link>
           </Nav>
-          <Link href="/login" passHref>
-            <PrincipalButton>Login</PrincipalButton>
+          <Link href="https://discord.gg/nYUD32p3EN" passHref>
+            <PrincipalButton>Entrar</PrincipalButton>
           </Link>
           <MobileNavButton onClick={handleToggleMobileMenu}>
             <HiMenu size="2rem" />
@@ -64,22 +61,22 @@ function Header() {
 
         <img
           src="/nav/nav-logo-extended.png"
-          alt="Axie Scholarship Rimiru Tempest"
+          alt="Axie Infinity Zone"
         />
         <Link href="/" passHref>
-          <NavItem>Home</NavItem>
-        </Link>
-        <Link href="/guia" passHref>
-          <NavItem>Guia de Iniciação</NavItem>
-        </Link>
-        <Link href="/recrutamento" passHref>
-          <NavItem>Recrutamento</NavItem>
-        </Link>
-        <Link href="/agenda" passHref>
-          <NavItem>Agenda de Treinos</NavItem>
-        </Link>
-        <Link href="/login" passHref>
-          <MobilePrincipalButton>Login</MobilePrincipalButton>
+              <NavItem>Home</NavItem>
+            </Link>
+            <Link href="/guia" passHref>
+              <NavItem>Guia de Iniciação</NavItem>
+            </Link>
+            <Link href="/investidores" passHref>
+              <NavItem>Investidores</NavItem>
+            </Link>
+            <Link href="/ranking" passHref>
+              <NavItem>Ranking dos Scholars</NavItem>
+            </Link>
+        <Link href="https://discord.gg/nYUD32p3EN" passHref>
+          <MobilePrincipalButton>Entrar</MobilePrincipalButton>
         </Link>
       </MobileNav>
     </>
