@@ -22,7 +22,6 @@
     "react-hooks",
     "react",
     "prettier",
-    "@typescript-eslint"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
