@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Header />
       <Hero>
-        <img src="/hero/hero-logo.png" alt="Axie Scholarship Rimuru Tempest" />
+        <img src="/hero/hero-logo.png" alt="Axie Infinity Zone" />
       </Hero>
       <InfoSection />
       <BookSection />
