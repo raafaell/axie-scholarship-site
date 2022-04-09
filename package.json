@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "lint": "^0.7.0",
     "next": "^12.1.4",
     "polished": "^4.1.3",
     "react": "^17.0.2",
