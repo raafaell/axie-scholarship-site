@@ -21,7 +21,7 @@
   "plugins": [
     "react-hooks",
     "react",
-    "prettier",
+    "prettier"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
